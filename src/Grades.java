@@ -42,4 +42,14 @@ public class Grades {
         }
         return rounded_grade;
     }
+
+    public int max_rounded_grade(int[] grades) {
+        int[] rounded = rounded_grades(grades);
+        int max = rounded[0];
+        for (int grade : rounded) {
+            if (grade > max)
+                max = grade;
+        }
+        return max;
+    }
 }

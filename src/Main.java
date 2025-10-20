@@ -12,5 +12,7 @@ public class Main {
         System.out.println("Average : " + String.format("%.2f", grade.average(grades)));
         int[] rounded = grade.rounded_grades(grades);
         System.out.println("Rounded grades : " + Arrays.toString(rounded));
+        System.out.println(grade.max_rounded_grade(grades));
+
     }
 }
